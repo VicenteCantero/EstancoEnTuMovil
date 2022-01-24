@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlmacenActivity">
+
+    <TextView
+        android:id="@+id/nombreUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:padding="15dp"
+        android:background="#FF9800"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/emailUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nombreUsuario"
+        android:text="TextView"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:padding="15dp"
+        android:background="#FF9800"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"/>
+
+    <Button
+        android:id="@+id/btAgregarProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailUsuario"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:text="Agregar producto"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/botones1"/>
+
+    <Button
+        android:id="@+id/btVerCarrito"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btAgregarProducto"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:text="Ver Carrito"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/botones1"/>
+
+    <ListView
+        android:id="@+id/lvProductos"
+        android:layout_below="@id/btVerCarrito"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
+

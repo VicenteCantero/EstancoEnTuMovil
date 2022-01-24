@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuthActivity">
+
+    <TextView
+        android:id="@+id/cabecera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Bienvenido a ETM \n \n El estanco en tu Movil"
+        android:textAlignment="center"
+        android:textColor="#FF9800"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@id/cabecera"
+        android:layout_marginTop="60dp"
+        android:padding="10dp"
+        android:hint="Nombre"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/etNombre"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:hint="Email"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmail"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:hint="Password"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+
+    <Button
+        android:id="@+id/btRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:text="Registrar"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/botones1"/>
+
+    <Button
+        android:id="@+id/btAcceder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btRegistro"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:text="Ya tengo cuenta"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/botones2"/>
+
+</RelativeLayout>

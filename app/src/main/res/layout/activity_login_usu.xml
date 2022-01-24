@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginUsuActivity">
+
+    <EditText
+        android:id="@+id/etEmailLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:hint="Email"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    <EditText
+        android:id="@+id/etPasswordLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmailLogin"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:hint="Password"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+
+    <Button
+        android:id="@+id/btIniciar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPasswordLogin"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:text="Iniciar Sesión"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/botones1"/>
+
+
+
+</RelativeLayout>
