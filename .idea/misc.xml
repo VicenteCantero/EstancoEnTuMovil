@@ -10,6 +10,7 @@
         <entry key="..\:/Users/vintc/AndroidStudioProjects/EstancoEnTuMovil/app/src/main/res/layout/activity_almacen.xml" value="0.16893115942028986" />
         <entry key="..\:/Users/vintc/AndroidStudioProjects/EstancoEnTuMovil/app/src/main/res/layout/activity_auth.xml" value="0.16893115942028986" />
         <entry key="..\:/Users/vintc/AndroidStudioProjects/EstancoEnTuMovil/app/src/main/res/layout/activity_carrito.xml" value="0.16893115942028986" />
+        <entry key="..\:/Users/vintc/AndroidStudioProjects/EstancoEnTuMovil/app/src/main/res/layout/activity_detalle_cliente.xml" value="0.19927536231884058" />
         <entry key="..\:/Users/vintc/AndroidStudioProjects/EstancoEnTuMovil/app/src/main/res/layout/activity_detalle_producto.xml" value="0.16893115942028986" />
         <entry key="..\:/Users/vintc/AndroidStudioProjects/EstancoEnTuMovil/app/src/main/res/layout/activity_lista_clientes.xml" value="0.16893115942028986" />
         <entry key="..\:/Users/vintc/AndroidStudioProjects/EstancoEnTuMovil/app/src/main/res/layout/activity_login_usu.xml" value="0.16893115942028986" />
@@ -17,8 +18,12 @@
         <entry key="..\:/Users/vintc/AndroidStudioProjects/EstancoEnTuMovil/app/src/main/res/layout/activity_pedidos.xml" value="0.15625" />
         <entry key="..\:/Users/vintc/AndroidStudioProjects/EstancoEnTuMovil/app/src/main/res/layout/activity_primer_m.xml" value="0.15625" />
         <entry key="..\:/Users/vintc/AndroidStudioProjects/EstancoEnTuMovil/app/src/main/res/layout/activity_primer_mactivity.xml" value="0.16893115942028986" />
+        <entry key="..\:/Users/vintc/AndroidStudioProjects/EstancoEnTuMovil/app/src/main/res/layout/activity_web_tabacalera.xml" value="0.19927536231884058" />
         <entry key="..\:/Users/vintc/AndroidStudioProjects/EstancoEnTuMovil/app/src/main/res/menu/agregar_productos_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/vintc/AndroidStudioProjects/EstancoEnTuMovil/app/src/main/res/menu/atras_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/vintc/AndroidStudioProjects/EstancoEnTuMovil/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />
+        <entry key="..\:/Users/vintc/AndroidStudioProjects/EstancoEnTuMovil/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2703125" />
+        <entry key="..\:/Users/vintc/AndroidStudioProjects/EstancoEnTuMovil/app/src/main/res/mipmap-xxhdpi/ic_launcher.xml" value="0.2703125" />
       </map>
     </option>
   </component>

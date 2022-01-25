@@ -21,8 +21,8 @@ import es.proyecto.estancoentumovil.model.Productos;
 
 public class DetalleProductoActivity extends AppCompatActivity {
 
-    private TextView nombreDetalle, precioDetalle, otroDetalle;
-    private Button btDetalle;
+    private TextView nombreDetalle, precioDetalle, categoriaDetalle;
+    private Button btAgregar, btBorrar;
 
     Productos miProducto;
     String idUsuario;
@@ -38,8 +38,9 @@ public class DetalleProductoActivity extends AppCompatActivity {
 
         nombreDetalle=(TextView) findViewById(R.id.nombreDetalle);
         precioDetalle=(TextView) findViewById(R.id.precioDetalle);
-        otroDetalle=(TextView) findViewById(R.id.otroDetalle);
-        btDetalle=(Button) findViewById(R.id.btDetalle);
+        categoriaDetalle=(TextView) findViewById(R.id.categoriaDetalle);
+        btAgregar=(Button) findViewById(R.id.btAgregar);
+        btBorrar= (Button) findViewById(R.id.btBorrar);
 
         miBase= FirebaseDatabase.getInstance();
         miReferencia= miBase.getReference();
@@ -53,7 +54,7 @@ public class DetalleProductoActivity extends AppCompatActivity {
                 miProducto= snapshot.getValue(Productos.class);
                 nombreDetalle.setText(miProducto.getNombre());
                 precioDetalle.setText(miProducto.getPrecio());
-                otroDetalle.setText(miProducto.getCategoria());
+                categoriaDetalle.setText(miProducto.getCategoria());
 
                 setTitle("Detalle: "+miProducto.getNombre());
 
@@ -65,11 +66,19 @@ public class DetalleProductoActivity extends AppCompatActivity {
             }
         });
 
-        btDetalle.setOnClickListener(new View.OnClickListener() {
+        btAgregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 miReferencia.child("Usuarios").child(idUsuario).child("carrito").child(miProducto.getUid()).setValue(true);
                 finish();
+            }
+        });
+
+        btBorrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                miReferencia.child("Productos").child(miProducto.getUid()).removeValue();
+                return;
             }
         });
     }

@@ -10,7 +10,6 @@
         android:id="@+id/nombreDetalle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Agregar producto"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:textAlignment="center"
@@ -21,36 +20,32 @@
         android:textStyle="bold|italic"/>
 
     <TextView
-        android:id="@+id/otroDetalle"
+        android:id="@+id/categoriaDetalle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Agregar producto"
         android:layout_below="@id/nombreDetalle"
         android:layout_marginTop="30dp"
         android:textAlignment="center"
         android:padding="15dp"
-        android:background="#FF9800"
+        android:background="#FFC107"
         android:textColor="@color/white"
-        android:textSize="30dp"
-        android:textStyle="bold|italic"/>
+        android:textSize="25dp"/>
 
     <TextView
         android:id="@+id/precioDetalle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Agregar producto"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/otroDetalle"
+        android:layout_below="@id/categoriaDetalle"
         android:layout_marginTop="30dp"
         android:textAlignment="center"
         android:padding="15dp"
-        android:background="#FF9800"
+        android:background="#FFC107"
         android:textColor="@color/white"
-        android:textSize="30dp"
-        android:textStyle="bold|italic"/>
+        android:textSize="25dp"/>
 
     <Button
-        android:id="@+id/btDetalle"
+        android:id="@+id/btAgregar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/precioDetalle"
@@ -58,6 +53,20 @@
         android:layout_marginTop="30dp"
         android:padding="10dp"
         android:text="Agregar carrito"
+        android:textSize="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/botones1"/>
+
+    <Button
+        android:id="@+id/btBorrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btAgregar"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:text="Borrar producto"
         android:textSize="20dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"

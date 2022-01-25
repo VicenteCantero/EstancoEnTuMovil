@@ -28,7 +28,7 @@ public class AuthActivity extends AppCompatActivity {
     FirebaseAuth mAuth;
     DatabaseReference mDatabase;
 
-    private String name="";
+    private String nombre="";
     private String email="";
     private String password="";
 
@@ -49,20 +49,20 @@ public class AuthActivity extends AppCompatActivity {
         btRegistro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                name=etNombre.getText().toString();
+                nombre=etNombre.getText().toString();
                 email=etEmail.getText().toString();
                 password=etPassword.getText().toString();
 
 
-                if(!name.isEmpty() && !email.isEmpty() && !password.isEmpty()){
+                if(!nombre.isEmpty() && !email.isEmpty() && !password.isEmpty()){
 
                     if(password.length()>=6){
                         registerUser();
                     }else{
-                        Toast.makeText(AuthActivity.this, "Más de 6", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AuthActivity.this, "Contraseña con 6 dígitos", Toast.LENGTH_SHORT).show();
                     }
                 }else{
-                    Toast.makeText(AuthActivity.this, "Rellena", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AuthActivity.this, "Rellena todos los campos", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -85,7 +85,7 @@ public class AuthActivity extends AppCompatActivity {
 
                     String id= mAuth.getCurrentUser().getUid();
 
-                    map.put("name", name);
+                    map.put("nombre", nombre);
                     map.put("email", email);
                     map.put("password", password);
                     map.put("uid", mAuth.getCurrentUser().getUid());

@@ -2,7 +2,7 @@ package es.proyecto.estancoentumovil.model;
 
 public class Clientes {
     private String uid;
-    private String nombre;
+    private String nombreEmpresa;
     private String persona;
     private String telefono;
 
@@ -19,11 +19,11 @@ public class Clientes {
     }
 
     public String getNombre() {
-        return nombre;
+        return nombreEmpresa;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombre(String nombreEmpresa) {
+        this.nombreEmpresa = nombreEmpresa;
     }
 
     public String getPersona() {
@@ -44,7 +44,7 @@ public class Clientes {
 
     @Override
     public String toString() {
-        return nombre+". -"+persona+"- ("+telefono+")";
+        return nombreEmpresa+". -"+persona+"- ("+telefono+")";
     }
 }
 

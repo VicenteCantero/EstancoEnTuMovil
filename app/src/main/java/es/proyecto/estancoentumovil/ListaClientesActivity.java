@@ -62,6 +62,7 @@ public class ListaClientesActivity extends AppCompatActivity {
             }
         });
 
+
         btAgregarCliente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -81,6 +82,7 @@ public class ListaClientesActivity extends AppCompatActivity {
                     ListaClientesActivity.this.clientes.add(clientes);
                     adapterClientes = new ArrayAdapter<Clientes>(ListaClientesActivity.this, android.R.layout.simple_list_item_1, ListaClientesActivity.this.clientes);
                     listaClientes.setAdapter(adapterClientes);
+
                 }
             }
 
@@ -120,4 +122,3 @@ public class ListaClientesActivity extends AppCompatActivity {
     }
 
 }
-

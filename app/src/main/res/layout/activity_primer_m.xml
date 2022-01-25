@@ -57,13 +57,26 @@
         android:layout_marginRight="40dp"
         android:background="@drawable/botones1"/>
 
+    <Button
+        android:id="@+id/btWeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btPedidos"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Web Tabacalera"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/botones1"/>
+
 
     <Button
         android:id="@+id/btCerrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textMultiLine"
-        android:layout_below="@id/btPedidos"
+        android:layout_below="@id/btWeb"
         android:layout_marginTop="60dp"
         android:padding="10dp"
         android:text="Cerrar sesión"

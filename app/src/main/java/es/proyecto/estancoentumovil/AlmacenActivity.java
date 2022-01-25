@@ -67,7 +67,7 @@ public class AlmacenActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent= new Intent(AlmacenActivity.this, DetalleProductoActivity.class);
                 intent.putExtra("Productos", listaProductos.get(i).getUid());
-                intent.putExtra("Usuarios", miUsuario.uid);
+                intent.putExtra("Usuarios", miUsuario.getUid());
                 startActivity(intent);
             }
         });
@@ -95,7 +95,7 @@ public class AlmacenActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent(AlmacenActivity.this, CarritoActivity.class);
-                intent.putExtra("Usuarios", miUsuario.uid);
+                intent.putExtra("Usuarios", miUsuario.getUid());
                 startActivity(intent);
             }
         });
@@ -124,8 +124,8 @@ public class AlmacenActivity extends AppCompatActivity {
                     nombreUsuario.setText(name);
                     emailUsuario.setText(email);
 
-                    if(miUsuario.carrito != null){
-                        btVerCarrito.setText("Ver Carrito ( "+miUsuario.carrito.size()+")");
+                    if(miUsuario.getCarrito() != null){
+                        btVerCarrito.setText("Ver Carrito ( "+miUsuario.getCarrito().size()+")");
                     }else{
                         btVerCarrito.setText("Ver Carrito");
                     }

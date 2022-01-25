@@ -11,7 +11,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class PrimerMActivity extends AppCompatActivity {
 
-    private Button btAlmacen, btClientes, btPedidos, btCerrar;
+    private Button btAlmacen, btClientes, btPedidos, btCerrar, btWeb;
     private FirebaseAuth mAuth;
 
     @Override
@@ -25,6 +25,7 @@ public class PrimerMActivity extends AppCompatActivity {
         btClientes= (Button) findViewById(R.id.btClientes);
         btPedidos= (Button) findViewById(R.id.btPedidos);
         btCerrar= (Button) findViewById(R.id.btCerrar);
+        btWeb= (Button) findViewById(R.id.btWeb);
 
 
         btAlmacen.setOnClickListener(new View.OnClickListener() {
@@ -52,6 +53,13 @@ public class PrimerMActivity extends AppCompatActivity {
         });
 
 
+        btWeb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent (PrimerMActivity.this, WebTabacaleraActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btCerrar.setOnClickListener(new View.OnClickListener() {
             @Override
