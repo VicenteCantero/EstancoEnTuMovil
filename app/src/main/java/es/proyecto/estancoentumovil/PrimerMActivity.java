@@ -61,6 +61,7 @@ public class PrimerMActivity extends AppCompatActivity {
             }
         });
 
+
         btCerrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

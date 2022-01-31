@@ -32,7 +32,7 @@ public class WebTabacaleraActivity extends AppCompatActivity {
         switch(item.getItemId()){
 
             case R.id.atras:
-                Intent intent2= new Intent (WebTabacaleraActivity.this, AlmacenActivity.class);
+                Intent intent2= new Intent (WebTabacaleraActivity.this, PrimerMActivity.class);
                 startActivity(intent2);
                 break;
 
